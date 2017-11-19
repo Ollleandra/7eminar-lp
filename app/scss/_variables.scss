@@ -1,0 +1,28 @@
+/* Color palette */
+$light-salmon: #ffa099;
+$perrywinkle: #7897dc;
+$black: #000000;
+$very-light-blue: #dbf8ff;
+$vibrant-green: #05e000;
+$red: #ff0000;
+$kelly-green: #00c22e;
+$warm-grey-two: #898989;
+$periwinkle-blue: #87a9f5;
+$cornflower-blue: #567bd0;
+$bright-yellow: #fffc00;
+$cornflower-blue-two: #466fcc;
+$white: #ffffff;
+$white-two: #e7e7e7;
+
+@function remy($pxsize) {
+  @return ($pxsize/16)+rem;
+}
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+

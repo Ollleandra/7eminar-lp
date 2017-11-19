@@ -1,0 +1,22 @@
+{
+  "name": "gulp_site",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "oleandra"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sass-mediaqueries": "^1.6.1",
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}

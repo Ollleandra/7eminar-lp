@@ -1,0 +1,72 @@
+html{
+  font: normal 16px PTSansRegular;
+}
+header, main, footer{
+  width: 100%;
+}
+header .banner, main section, footer nav{
+  max-width: 960px;
+  margin: 0 auto;
+}
+main{
+  text-align: center;
+}
+.banner, .about, .sell, footer nav, .slogan div {
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+}
+header  {
+  background: linear-gradient($black 32px, transparent 32px),
+              linear-gradient(50deg, $light-salmon 45%, transparent 45%), url(../img/bg.png);
+  height: 510px;
+
+  button{
+    width: 190px;
+    height: 46px;
+    background-color: $vibrant-green;
+    box-shadow: 0px 5px 0 0 #038900;
+    border-radius: remy(7);
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    font-family: Myriad Pro;
+    font-size: remy(25);
+    line-height: 2;
+    &:hover{
+      background-color: #ffc600;
+      box-shadow: 0px 5px 0 0 #d38b00;
+    }
+  }
+  .gallery{
+    align-self: flex-end;
+    height: 430px;
+  }
+}
+.banner{
+  height: 510px;
+}
+.desc{
+  font-size: remy(35.1);
+  font-weight: bold;
+  line-height: 1.37;
+  text-transform: uppercase;
+  color: $white;
+}
+.life{
+  margin-top: remy(33);
+  font-size: remy(80);
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+  color: $bright-yellow;
+  text-transform: uppercase;
+
+}
+.slogan {
+  margin: remy(100) remy(25);
+  div {
+    justify-content: space-between;
+    align-items: center;
+  }
+}

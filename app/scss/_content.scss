@@ -1,0 +1,17 @@
+main div{
+  margin: remy(24) 0px;
+}
+h2{
+  font-size: remy(26);
+  font-weight: bold;
+  line-height: 0.92;
+  text-transform: uppercase;
+  color: $black;
+}
+.about{
+  margin: remy(20) auto;
+}
+.children{
+  height: 70px;
+  background-image: linear-gradient(to bottom, $white, $very-light-blue);
+}
