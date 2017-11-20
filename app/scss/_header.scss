@@ -4,7 +4,7 @@ html{
 header, main, footer{
   width: 100%;
 }
-header .banner, main section, footer nav{
+header .banner, main section:not(.children), .wr-children, footer nav{
   max-width: 960px;
   margin: 0 auto;
 }

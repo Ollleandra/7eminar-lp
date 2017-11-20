@@ -1,0 +1,15 @@
+footer{
+  margin-bottom:remy(20);
+  nav{
+    justify-content:space-around;
+  }
+  a{
+    font-family: Tahoma;
+    font-size: remy(16);
+    line-height: 1.5;
+    color: $warm-grey-two;
+    &:hover{
+    color: $black;
+  }
+  }
+}

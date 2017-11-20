@@ -1,4 +1,4 @@
-main div{
+main>div{
   margin: remy(24) 0px;
 }
 h2{
@@ -9,9 +9,173 @@ h2{
   color: $black;
 }
 .about{
-  margin: remy(20) auto;
+  figure{
+    flex: 1 1 auto;
+    align-self: center;
+    max-width: calc(25% - 30px);
+  }
+  figure{
+    position: relative;
+    display: inline-block;
+    &:not(:last-of-type)::after{
+      position: absolute;
+      z-index: 5;
+      display: inline-block;
+      top:50px;
+      left:calc(100% - 11px);
+      width: remy(22);
+      height: remy(22);
+      content: "";
+      border-radius: remy(11);
+      background-color: $very-light-blue;
+    }
+  }
+  figcaption{
+    font-size: remy(18);
+    line-height: 1.33;
+    text-align: center;
+    color: $black;
+    span{
+      color: $red;
+    }
+  }
+}
+.icons>h2{
+  margin-bottom: remy(20);
 }
 .children{
-  height: 70px;
-  background-image: linear-gradient(to bottom, $white, $very-light-blue);
+  margin-top:remy(20);
+  height: 156px;
+  background: linear-gradient(to bottom, $white, $very-light-blue 80%, transparent 80%);
+}
+.wr-children{
+  height: 156px;
+  padding-top:remy(40);
+  box-sizing: border-box;
+  background: url(../img/girl_color.png) no-repeat 0% 0%;
+
+  h2{
+    margin-left: 35%;
+    text-align: left;
+    font-size: remy(26);
+    font-weight: bold;
+    line-height:1;
+    color: $periwinkle-blue;
+    span{
+      font-weight: bold;
+      color: $cornflower-blue;
+    }
+  }
+}
+.sell-item{
+  margin: remy(15);
+  flex: 1 1 auto;
+  max-width: calc(33% - 30px);
+  min-height: 390px;
+  border: solid 3px $white-two;
+  &:hover{
+    border: solid 3px $very-light-blue;
+    background: linear-gradient(to bottom, $white 70%, $very-light-blue);
+  }
+  &:hover>hr{
+    background-color: $very-light-blue;
+  }
+  hr{
+    margin: remy(10) auto;
+    width: 50%;
+    height: remy(5);
+    background-color: $white-two;
+    border: none;
+  }
+  .s-want{
+    margin: remy(20) 0;
+    font-size: remy(20);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: $red;
+  }
+  .s-what{
+    font-family: Tahoma;
+    font-size: remy(16);
+    line-height: 1.5;
+    text-align: center;
+    color: $black;
+  }
+  .old-price{
+    margin: remy(20) 0;
+    font-family: Tahoma;
+    font-size: remy(22.2);
+    line-height: 1.33;
+    text-align: center;
+    color: $black;
+  }
+  .line-through{
+    position: relative;
+    font-size: remy(30);
+    font-weight: bold;
+    text-align: center;
+    color: $cornflower-blue;
+    &::after{
+      position: absolute;
+      top:remy(15);
+      left:0%;
+      content: '';
+      width:100%;
+      height: remy(5);
+      background-color: $red;
+      opacity: 0.6;
+    }
+  }
+  .blue-grn{
+    font-size: remy(12);
+    font-weight: bold;
+    text-align: center;
+    color: $cornflower-blue;
+  }
+  .new-price{
+    font-family: Myriad Pro;
+    font-size: remy(60);
+    color: $red;
+    line-height: 1;
+  }
+  .black-grn{
+    font-size: remy(24);
+    font-weight: bold;
+    color: $black;
+    line-height: 1;
+  }
+  .to-sell{
+    margin: remy(25) auto;
+    width: 60%;
+    height: remy(40);
+    background-color: $kelly-green;
+    border-radius: remy(7);
+    &:hover{
+      background-color: $red;
+    }
+    a{
+      display: inline-block;
+      width: 100%;
+      height: remy(40);
+      line-height:2;
+      font-size: remy(20);
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.ps{
+  font-family: Myriad Pro;
+  font-size: remy(18);
+  line-height: 1.33;
+  color: $black;
+  span{
+    color: $red;
+  }
 }
