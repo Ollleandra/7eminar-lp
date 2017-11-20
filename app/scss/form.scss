@@ -1,0 +1,62 @@
+p.seminar-total{  text-align: center; }
+.header { font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; padding: 0 20px; height: 60px; font-size: 20px; color: white; line-height: 24px; box-sizing: border-box; }
+.header .inner { padding: 18px 0; }
+.header p { margin: 0; color: #fac553; }
+.header p span { color: white; font-size: 14px; }
+.header a { display: block; text-decoration: none; color: white; }
+.header a.logo { float: left; background: url(../img/logo.png) no-repeat; width: 184px; height: 24px; padding: 0; }
+.header a.mail { float: right; }
+.header p { text-align: center; }
+.header:before { content: ""; position: absolute; height: inherit; left: 0; right: 0; z-index: -1; background-color: #515e90; }
+.order-wrap { min-height: calc(100vh - 145px - 60px); }
+.free-materials { min-height: calc(100vh - 145px - 60px); }
+.free-materials .order-form-lp .edit-order { display: flex; justify-content: center; margin-top: 35px; }
+.free-materials .order-form-lp .free-materials-title { text-align: center; font-weight: normal; text-transform: none; font-size: 20px; }
+.free-materials .edit-order { position: relative; }
+.free-materials .edit-order:before { content: "\f0a8"; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18px; padding-right: 0.5em; position: absolute; top: 9px; left: 113px; }
+.free-materials .form-group label { width: 100px; }
+.free-materials .buttons-group .button { text-transform: uppercase; }
+.free-materials .form-group label.error { left: 85px; }
+.order-form-lp { box-sizing: border-box; width: 540px; margin: 30px auto; padding: 25px 45px 40px 40px; background-color: #ffffff; box-shadow: 0 0 40px 0 #cacaca; border: solid 1px #cacaca; border-radius: 5px; margin-bottom: 0; font-family: 'PT Sans', sans-serif; font-size: 16px; color: #7d7d7d; }
+.order-form-lp h2 { margin: 0; margin-bottom: 20px; font-size: 16px; text-transform: uppercase; color: #000; }
+.order-form-lp hr { margin: 15px 0; border-top: dashed 1px #e6e6e6; border-bottom: none; }
+.order-form-lp .edit-order { padding: 6px 0; display: block; font-family: 'PT Sans', sans-serif; font-size: 16px; color: #7d7d7d; }
+.order-form-lp .edit-order:hover { color: #515e90; }
+.order-form-lp .seminar-count { display: flex; align-items: center; }
+.order-form-lp .seminar-count input[type="number"] { width: 33px; height: 30px; font-family: 'PT Sans', sans-serif; font-size: 16px; text-align: center; border: solid 1px #cacaca; outline: 0; }
+.order-form-lp .seminar-count input::-webkit-inner-spin-button { -webkit-appearance: none; display: none; opacity: 0; }
+.order-form-lp .seminar-count input[type=number] { -moz-appearance: textfield; }
+.order-form-lp .seminar-count button { width: 30px; height: 30px; font-family: 'PT Sans', sans-serif; font-size: 16px; border: solid 1px #cacaca; color: #898989; outline: 0; cursor: pointer; background: #fff; }
+.order-form-lp .seminar-count button:hover { background: #d7d7d7; }
+.order-form-lp .seminar-count .dec { border-right: 0; border-radius: 5px 0 0 5px; }
+.order-form-lp .seminar-count .inc { border-left: 0; border-radius: 0 5px 5px 0; }
+.seminar-info { margin: 0; margin-bottom: 13px; padding-top: 15px; border-top: dashed 1px #e6e6e6; border-bottom: dashed 1px #e6e6e6; }
+.seminar-info:after { content: ""; display: table; clear: both; }
+.seminar-info dt { float: left; }
+.seminar-info dt, .seminar-info dd { margin-bottom: 20px; line-height: 25px; }
+.seminar-info dd { margin-left: 110px; }
+.seminar-info .seminar-title { font-weight: bold; color: #515e90; }
+.seminar-info .seminar-total { position: relative; padding-left: 35px; }
+.seminar-info .seminar-total:before { content: ''; position: absolute; top: 0; left: 0; width: 25px; height: 25px; background-image: url("../img/vallet.png"); background-repeat: no-repeat; background-size: cover; }
+.seminar-info .seminar-price, .seminar-info .seminar-date { color: #000; }
+.seminar-info .seminar-total { margin-top: 5px; }
+.seminar-info .seminar-total-price { float: right; margin: 0; margin-top: 5px; font-size: 30px; line-height: 20px; color: #000; }
+.form-group { position: relative; display: flex; align-items: center; padding: 15px 0; }
+.form-group:after { content: ""; display: table; clear: both; }
+.form-group input { width: 100%; padding: 9px 20px; background-color: #fff; background-image: none; border: 1px solid #e6e6e6; border-radius: 4px; font-family: 'PT Sans', sans-serif; font-size: 16px; }
+.form-group input:focus { outline: none; border: 1px solid #515e90; }
+.form-group label { width: 150px; }
+.form-group input.error { border: 1px solid #ff0000; outline: none; }
+.form-group input.valid { position: relative; border: 1px solid #1cac20; outline: none; }
+.form-group label.error { position: absolute; width: 100%; top: -5px; left: 113px; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #ff0000; }
+.buttons-group { position: relative; padding-top: 20px; }
+.buttons-group .button { margin-bottom: 20px; display: block; width: 200px; padding: 8px 0; border: 0; border-radius: 5px; background-color: #ff0000; font-family: 'PT Sans', sans-serif; font-size: 18px; font-weight: bold; color: #fff; cursor: pointer; }
+.buttons-group .button:hover { background-color: #515e90; }
+.buttons-group .button:focus { border: 0; outline: 0; }
+.buttons-group .button-order { margin: 0 auto; }
+.buttons-group .button-card { display: none; position: relative; margin-bottom: 0; background-color: #1cac20; }
+.buttons-group .card-logo { display: none; position: absolute; right: 0; bottom: 3px; width: 198px; height: 26px; background: url("../img/logo-cards.png") no-repeat center; }
+.card .buttons-group .button-order { margin: 0 0 20px 0; }
+.card .buttons-group .button-card { display: block; }
+.card .buttons-group .card-logo { display: block; }
+

@@ -2,14 +2,62 @@
 <html>
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Розфарбуй життя</title>
-    <link rel="stylesheet" type="text/css" href="css/gallery.theme.css">
-    <link rel="stylesheet" type="text/css" href="css/gallery.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Інформація про замовлення</title>
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 </head>
 <body>
+<p class="seminar-total">Задания выполнялись за день до отправки. Форма еще правится, сорри...</p>
+<div class="order-wrap">
+    <div class="order  card ">
+        <form class="order-form-lp" action="" method="post">
+            <h2>Інформація про замовлення:</h2>
+            <dl class="seminar-info">
+                <dt>Комплект семінарів:</dt>
+                <dd class="seminar-title">Великий Бухгалтерський Семінар <span>- 13 квітня 2017 р.</span><br>
+                    «Великий Кадровий Семінар» <span>- 25 травня 2017 р.</span>
+                </dd>
+                <dt>Ціна:</dt>
+                <dd class="seminar-price">299 грн.</dd>
+                <dt>Кількість:</dt>
+                <dd class="seminar-count spinner">
+                    <button type="button" rel="decrement" class="dec">-</button>
+                    <input type="number" name="count" value="12" min="1" max="20" required>
+                    <button type="button" rel="increment" class="inc">+</button>
+                </dd>
+                <hr>
+                <dt class="seminar-total">Загальна сума:</dt>
+                <dd class="seminar-total-price"><span id="total">498</span> грн
+                </dd>
+            </dl>
+            <a href="#return" class="edit-order">Повернутись для редагування замовлення?</a>
+            <hr>
+            <div class="form-group">
+                <label>Платник:</label>
+                <input type="text" name="name" value="" required minlength="2">
+            </div>
 
+            <div class="form-group">
+                <label>Е-mail:</label>
+                <input type="email" name="email" value="" required>
+            </div>
+
+            <div class="form-group">
+                <label>Телефон:</label>
+                <input type="text" name="phone" value="" class="phone-mask" required>
+            </div>
+
+            <div class="buttons-group">
+                <button type="submit" name="action" value="order" class="button button-order">Отримати рахунок
+                </button>
+                <button type="submit" name="action" value="card" class="button button-card">Оплатити карткою
+                </button>
+                <div class="card-logo"></div>
+            </div>
+
+        </form>
+    </div>
+</div>
 <script type="text/javascript" src="js/main.js">
 </script>
 </body>
