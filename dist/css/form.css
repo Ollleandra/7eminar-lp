@@ -1,3 +1,18 @@
+input::-webkit-input-placeholder{
+    color: transparent;
+}
+input:-moz-placeholder{
+    color: transparent;
+}
+input::-moz-placeholder{
+    color: transparent;
+}
+input:-ms-input-placeholder{
+    color: transparent;
+}
+input:invalid:not(:focus):not(:placeholder-shown):invalid{
+    border-color: red;
+}
 p.seminar-total{  text-align: center; }
 .header { font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; padding: 0 20px; height: 60px; font-size: 20px; color: white; line-height: 24px; box-sizing: border-box; }
 .header .inner { padding: 18px 0; }

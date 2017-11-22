@@ -1,50 +1,52 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Інформація про замовлення</title>
     <link rel="stylesheet" type="text/css" href="../css/form.css">
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://7eminar.com/themes/7eminar/seminars/favicon.ico">
 </head>
 <body>
-<p class="seminar-total">Задания выполнялись за день до отправки. Форма еще правится, сорри...</p>
 <div class="order-wrap">
     <div class="order  card ">
         <form class="order-form-lp" action="" method="post">
             <h2>Інформація про замовлення:</h2>
             <dl class="seminar-info">
                 <dt>Комплект семінарів:</dt>
-                <dd class="seminar-title">Великий Бухгалтерський Семінар <span>- 13 квітня 2017 р.</span><br>
-                    «Великий Кадровий Семінар» <span>- 25 травня 2017 р.</span>
+                <dd class="seminar-title">
+                    <ul>
+                        <li>Великий Бухгалтерський Семінар <span>- 13 квітня 2017 р.</span></li>
+                        <li>«Великий Кадровий Семінар» <span>- 25 травня 2017 р.</span></li>
+                    </ul>
                 </dd>
                 <dt>Ціна:</dt>
-                <dd class="seminar-price">299 грн.</dd>
+                <dd class="seminar-price"><span id="price">299</span> грн.</dd>
                 <dt>Кількість:</dt>
                 <dd class="seminar-count spinner">
-                    <button type="button" rel="decrement" class="dec">-</button>
-                    <input type="number" name="count" value="12" min="1" max="20" required>
-                    <button type="button" rel="increment" class="inc">+</button>
+                    <button type="button" id="decrement" class="dec">-</button>
+                    <input type="number" id="setCount" value="1" min="1" max="20" required>
+                    <button type="button" id="increment" class="inc">+</button>
                 </dd>
                 <hr>
                 <dt class="seminar-total">Загальна сума:</dt>
-                <dd class="seminar-total-price"><span id="total">498</span> грн
+                <dd class="seminar-total-price"><span id="total">299</span> грн
                 </dd>
             </dl>
             <a href="#return" class="edit-order">Повернутись для редагування замовлення?</a>
             <hr>
             <div class="form-group">
                 <label>Платник:</label>
-                <input type="text" name="name" value="" required minlength="2">
+                <input type="text" name="name" value="" placeholder="Платник" required minlength="3">
             </div>
 
             <div class="form-group">
                 <label>Е-mail:</label>
-                <input type="email" name="email" value="" required>
+                <input type="email" name="email" value="" placeholder="Е-mail" required>
             </div>
 
             <div class="form-group">
                 <label>Телефон:</label>
-                <input type="text" name="phone" value="" class="phone-mask" required>
+                <input type="tel" name="phone" value="" class="phone-mask" placeholder="Телефон" pattern="^[0-9]+$" minlength="10" required>
             </div>
 
             <div class="buttons-group">
@@ -58,7 +60,7 @@
         </form>
     </div>
 </div>
-<script type="text/javascript" src="js/main.js">
+<script type="text/javascript" src="../js/main.js">
 </script>
 </body>
 </html>
